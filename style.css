@@ -705,6 +705,58 @@ html, body {
   opacity: 0.9;
 }
 
+/* Couple Lineage & Family Heritage (Hero Page) */
+.couple-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.couple-lineage {
+  margin: 6px auto 2px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  max-width: 330px;
+}
+
+.lineage-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+}
+
+.lineage-line .lineage-label {
+  font-family: var(--font-serif);
+  font-size: 0.62rem;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  opacity: 0.9;
+}
+
+.lineage-line .lineage-names {
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--color-text-bright);
+  letter-spacing: 0.3px;
+  line-height: 1.25;
+}
+
+.grandparents-line .lineage-names {
+  font-size: 0.88rem;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--color-gold-light);
+  opacity: 0.92;
+}
+
 .invitation-tagline {
   font-family: var(--font-body);
   font-size: 0.9rem;
@@ -2375,7 +2427,147 @@ html, body {
 }
 
 /* ==========================================================================
-   PAGE 5: DISTINCT ROYAL REGISTRY RSVP CARD
+   PAGE 5: WITH THE BLESSINGS OF FAMILY & ELDERS SECTION CARD
+   ========================================================================== */
+.family-section-card {
+  border-top: 2px solid rgba(229, 193, 88, 0.65);
+  background: linear-gradient(180deg, rgba(28, 20, 26, 0.86) 0%, rgba(16, 12, 18, 0.92) 100%);
+}
+
+.ceremony-badge.royal-gold {
+  background: rgba(229, 193, 88, 0.16);
+  border: 1px solid rgba(229, 193, 88, 0.45);
+  color: #FFE082;
+}
+
+.families-dual-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.family-pillar-card {
+  background: rgba(24, 20, 26, 0.72);
+  border: 1px solid rgba(229, 193, 88, 0.28);
+  border-radius: 16px;
+  padding: 16px 14px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.family-pillar-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3.5px;
+  height: 100%;
+  background: var(--color-gold-gradient);
+}
+
+.pillar-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgba(229, 193, 88, 0.15);
+  padding-bottom: 10px;
+}
+
+.pillar-crest {
+  font-size: 1.15rem;
+  filter: drop-shadow(0 0 6px rgba(229, 193, 88, 0.5));
+}
+
+.pillar-family-title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  color: #FFF6D5;
+  letter-spacing: 1px;
+}
+
+.pillar-side-badge {
+  font-family: var(--font-serif);
+  font-size: 0.65rem;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.pillar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+
+.pillar-group {
+  width: 100%;
+}
+
+.pillar-role-label {
+  font-family: var(--font-serif);
+  font-size: 0.64rem;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: rgba(229, 193, 88, 0.8);
+  display: block;
+  margin-bottom: 3px;
+}
+
+.pillar-names {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: #FBF9F5;
+  line-height: 1.35;
+}
+
+.pillar-names.highlight-names {
+  font-size: 1.08rem;
+  color: #FFE082;
+  text-shadow: 0 0 10px rgba(229, 193, 88, 0.25);
+}
+
+.pillar-divider-dot {
+  font-size: 0.65rem;
+  color: var(--color-gold);
+  opacity: 0.6;
+  line-height: 1;
+}
+
+.family-compliments-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: rgba(229, 193, 88, 0.08);
+  border: 1px solid rgba(229, 193, 88, 0.25);
+  border-radius: 12px;
+  padding: 10px 14px;
+  width: 100%;
+}
+
+.compliments-icon {
+  font-size: 0.9rem;
+}
+
+.compliments-text {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--color-gold-light);
+  letter-spacing: 0.4px;
+}
+
+/* ==========================================================================
+   PAGE 6: DISTINCT ROYAL REGISTRY RSVP CARD
    ========================================================================== */
 .registry-page-card {
   width: 100%;
